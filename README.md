@@ -26,7 +26,7 @@ A work day scheduler is opened when the page is opened. The features of the page
     c. Green if the time is future.
 4. Past events are written in white while present and future events are written in black.
 5. If the timeblock is clicked, the user can enter an event.
-6. This event is stored in the memory if the save button is clicked.
+6. This event is stored in the local storage if the save button is clicked.
 7. Events are stored and persist when the page refreshes.
 
 ## Screenshots
