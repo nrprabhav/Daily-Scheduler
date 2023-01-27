@@ -24,11 +24,11 @@ function updateTable() {
         // Color timeblocks based on time
         let timeDiff = currTime.diff(startTime, "hours");
         if (timeDiff > 0) {
-            $("#timeBlocks").children().eq(i).children('textarea').attr("class", "description past");
+            $("#timeBlocks").children().eq(i).children('textarea').attr("class", "description past text-light");
         } else if (timeDiff < 0) {
-            $("#timeBlocks").children().eq(i).children('textarea').attr("class", "description future");
+            $("#timeBlocks").children().eq(i).children('textarea').attr("class", "description future text-dark");
         } else {
-            $("#timeBlocks").children().eq(i).children('textarea').attr("class", "description present");
+            $("#timeBlocks").children().eq(i).children('textarea').attr("class", "description present text-dark");
         }
         startTime.add(1, 'hours');
     }
