@@ -32,7 +32,7 @@ A work day scheduler is opened when the page is opened. The features of the page
 ## Screenshots
 
 The page when no events are present:
-[](./assets/images/empty-page.PNG)
+![](./assets/images/empty-page.PNG)
 
 The page with stored events:
-[](./assets/images/page-events.PNG)
+![](./assets/images/page-events.PNG)
