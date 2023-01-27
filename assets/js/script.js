@@ -15,7 +15,7 @@ function updateTable() {
     // Display events stored in local storage on the timeblocks
 
     let startTime = moment("09", "hh");
-    let currTime = moment();
+    let currTime = moment("11", "hh");
     eventsList = JSON.parse(localStorage.getItem("eventsList"));
     for (i = 0; i < 9; i++) {
 

@@ -32,6 +32,7 @@ A work day scheduler is opened when the page is opened. The features of the page
 <li>This event is stored in the local storage if the save button is clicked.</li>
 <li>Events are stored and persist when the page refreshes.</li>
 <ol>
+
 ## Screenshots
 
 The page when no events are present:
