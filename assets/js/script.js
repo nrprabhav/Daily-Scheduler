@@ -19,16 +19,16 @@ function updateTable() {
     eventsList = JSON.parse(localStorage.getItem("eventsList"));
     for (i = 0; i < 9; i++) {
         // Display events stored in memory
-        $("#timeBlocks").children().eq(i).children('input').val(eventsList[i]);
+        $("#timeBlocks").children().eq(i).children('textarea').val(eventsList[i]);
 
         // Color timeblocks based on time
         let timeDiff = currTime.diff(startTime, "hours");
         if (timeDiff > 0) {
-            $("#timeBlocks").children().eq(i).children('input').attr("class", "description past");
+            $("#timeBlocks").children().eq(i).children('textarea').attr("class", "description past");
         } else if (timeDiff < 0) {
-            $("#timeBlocks").children().eq(i).children('input').attr("class", "description future");
+            $("#timeBlocks").children().eq(i).children('textarea').attr("class", "description future");
         } else {
-            $("#timeBlocks").children().eq(i).children('input').attr("class", "description present");
+            $("#timeBlocks").children().eq(i).children('textarea').attr("class", "description present");
         }
         startTime.add(1, 'hours');
     }
