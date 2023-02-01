@@ -15,7 +15,7 @@ function updateTable() {
     // Display events stored in local storage on the timeblocks
 
     let startTime = moment("09", "hh");
-    let currTime = moment("11", "hh");
+    let currTime = moment();
     eventsList = JSON.parse(localStorage.getItem("eventsList"));
     for (i = 0; i < 9; i++) {
 
@@ -41,8 +41,8 @@ function updateTable() {
 // Click Event
 $(".saveBtn").on("click", function (event) {
     eventsList = JSON.parse(localStorage.getItem("eventsList")); //Update events array from local storage
-    let targetParent = event.currentTarget.parentNode; 
-    eventsList[Number(targetParent.id[0]-1)] = targetParent.children[1].value; //Add new event to array
+    let targetParent = event.currentTarget.parentNode;
+    eventsList[Number(targetParent.id[0] - 1)] = targetParent.children[1].value; //Add new event to array
     localStorage.setItem("eventsList", JSON.stringify(eventsList)); //Store array in local storage
 })
 
